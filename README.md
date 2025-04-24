@@ -1,19 +1,24 @@
-# Customization_For_Developers 🧑‍💻🎨
-
 # Linux Terminal Customization with Zsh (Video 03 Reference)
 
 This guide provides all the commands and setup steps mentioned in the third video of my YouTube playlist: "Customization for Developers: 03 - Make your LINUX terminal LOOK AMAZING".
 
 ---
 
-## Step 1: Change the Default Shell to Zsh
+## Step 1: Install ZSH  
+```bash
+sudo apt install zsh
+```
+
+---
+
+## Step 2: Change the Default Shell to Zsh
 ```bash
 chsh -s $(which zsh)
 ```
 
 ---
 
-## Step 2: Essential Zsh Plugins
+## Step 3: Essential Zsh Plugins
 Add these plugins to your `.zshrc` file under the `plugins` array:
 ```zsh
 plugins=(
@@ -42,7 +47,7 @@ git clone https://github.com/MichaelAquilina/zsh-you-should-use.git ${ZSH_CUSTOM
 
 ---
 
-## Step 3: Install Powerlevel10k Theme
+## Step 4: Install Powerlevel10k Theme
 ```bash
 git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
 ```
@@ -55,7 +60,7 @@ POWERLEVEL9K_MODE="nerdfont-complete"
 
 ---
 
-## Step 4: Fonts (Nerd Fonts)
+## Step 5: Fonts (Nerd Fonts)
 To properly render icons and symbols:
 - Visit: https://www.nerdfonts.com/
 - Recommended: [FiraMono Nerd Font](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/FiraMono)
@@ -64,13 +69,13 @@ Install and apply the font in your terminal settings.
 
 ---
 
-## Step 5: Handy Aliases
+## Step 6: Handy Aliases
 Add these aliases to your `.zshrc`:
 ```bash
 # Update Ubuntu & apps
 alias update='sudo apt update && sudo apt upgrade -y && flatpak update -y && sudo snap refresh'
 
-# Clean up system
+# Clean up the system
 alias clean='sudo apt autoremove && sudo apt clean all'
 
 # Clear memory cache
@@ -79,8 +84,8 @@ alias cmc='sync && echo 3 | sudo tee /proc/sys/vm/drop_caches'
 
 ---
 
-📌 For full tutorial, visit the video:
-"03 - Make your LINUX terminal LOOK AMAZING" on my [YouTube Playlist](https://www.youtube.com/playlist?list=PL...)
+📌 For the full tutorials, visit the playlist:
+"Customization for Developers 🎨" on my [YouTube Channel](https://youtube.com/playlist?list=PL-aLh5gc6xE2Z2oh5jvuZGNh6rD4tTiEk&si=X61SyJTSiRYhM10o)
 
 Connect with Me:
 - 🌐 Portfolio: https://mos3ab.tech
