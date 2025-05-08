@@ -83,6 +83,14 @@ alias cmc='sync && echo 3 | sudo tee /proc/sys/vm/drop_caches'
 ```
 
 ---
+# 05-Explore different ways to INSTALL APPS on LINUX [Arabic]
+```bash
+# For Appimage
+sudo apt install libfuse2 
+```
+
+
+---
 
 📌 For the full tutorials, visit the playlist:
 "Customization for Developers 🎨" on my [YouTube Channel](https://youtube.com/playlist?list=PL-aLh5gc6xE2Z2oh5jvuZGNh6rD4tTiEk&si=X61SyJTSiRYhM10o)
