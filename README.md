@@ -88,28 +88,10 @@ alias cmc='sync && echo 3 | sudo tee /proc/sys/vm/drop_caches'
 # For Appimage
 sudo apt install libfuse2 
 ```
-
-
----
-
 ---
 # 06-Installing programming apps (Vs Code - Postman - MongoDB - MySQL - Obsidian) [Arabic]
 
 ---
-## Postman
-```bash
-sudo tar -xvzf postman-linux-x64.tar.gz -C /opt/ (manually installed software packages).
-sudo ln -s /opt/Postman/Postman /usr/bin/postman (Optional Software - Binary)
-sudo nano /usr/share/applications/postman.desktop
-
-[Desktop Entry]
-Name=Postman
-Exec=/usr/bin/postman
-Icon=/opt/Postman/app/resources/app/assets/icon.png
-Type=Application
-Categories=Development;
-Terminal=false
-```
 ## Postman
 ```bash
 sudo tar -xvzf postman-linux-x64.tar.gz -C /opt/ (manually installed software packages).
