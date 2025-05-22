@@ -136,6 +136,19 @@ Terminal=false
 update-desktop-database ~/.local/share/applications/
 ```
 
+# 07-Is the environment ready to run? (Node - npm - Python - PHP - C/C++)
+## nodejs
+```bash
+sudo apt install nodejs npm
+```
+---
+```bash
+sudo apt install php php-cli php-common php-mbstring php-xml php-curl php-mysql php-zip php-gd php-bcmath phpmyadmin -y
+```
+---
+```bash
+sudo apt install build-essential -y
+```
 ---
 
 📌 For the full tutorials, visit the playlist:
